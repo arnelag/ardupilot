@@ -402,6 +402,9 @@ void Plane::set_mode(enum FlightMode mode, mode_reason_t reason)
 
     case MANUAL:
     case STABILIZE:
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        //Group_5_AA441 END
     case TRAINING:
     case FLY_BY_WIRE_A:
         auto_throttle_mode = false;
@@ -537,6 +540,9 @@ bool Plane::mavlink_set_mode(uint8_t mode)
     case MANUAL:
     case CIRCLE:
     case STABILIZE:
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        //Group_5_AA441 END
     case TRAINING:
     case ACRO:
     case FLY_BY_WIRE_A:
@@ -746,6 +752,11 @@ void Plane::print_flight_mode(AP_HAL::BetterStream *port, uint8_t mode)
     case QRTL:
         port->printf("QRTL");
         break;
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        port->printf("UWSTABILIZE");
+        break;
+        //Group_5_AA441 END
     default:
         port->printf("Mode(%u)", (unsigned)mode);
         break;
@@ -819,6 +830,11 @@ void Plane::notify_flight_mode(enum FlightMode mode)
     case QRTL:
         notify.set_flight_mode_str("QRTL");
         break;
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        notify.set_flight_mode_str("UWSTABILIZE");
+        break;
+        //Group_5_AA441 END
     default:
         notify.set_flight_mode_str("----");
         break;

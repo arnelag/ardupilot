@@ -362,6 +362,13 @@ void Plane::stabilize()
         // nothing to do
         return;
     }
+
+    //Group_5_AA441 START
+    if (control_mode == UWSTABILIZE) {
+        return;
+    }
+    //Group_5_AA441 END
+
     float speed_scaler = get_speed_scaler();
 
     if (control_mode == TRAINING) {

@@ -64,7 +64,10 @@ enum FlightMode {
     QHOVER        = 18,
     QLOITER       = 19,
     QLAND         = 20,
-    QRTL          = 21
+    QRTL          = 21,
+    //Group_5_AA441 START
+    UWSTABILIZE   = 22
+    //Group_5_AA441 END
 };
 
 enum mode_reason_t {

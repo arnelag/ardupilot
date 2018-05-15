@@ -12,6 +12,13 @@
 #define GOBJECTN(v, pname, name, class) { AP_PARAM_GROUP, name, Parameters::k_param_ ## pname, (const void *)&plane.v, {group_info : class::var_info} }
 
 const AP_Param::Info Plane::var_info[] = {
+    //Group_5_AA441 START
+    // @Param: KP_PHI
+    // @DisplayName: KP for UW wing leveler.
+    // @User: Standard
+    GSCALAR(kp_phi, "KP_PHI", 0.43),
+    //Group_5_AA441 END
+
     // @Param: FORMAT_VERSION
     // @DisplayName: Eeprom format version number
     // @Description: This value is incremented when changes are made to the eeprom format

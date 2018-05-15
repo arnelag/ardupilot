@@ -31,6 +31,9 @@ void Plane::send_heartbeat(mavlink_channel_t chan)
     case MANUAL:
     case TRAINING:
     case ACRO:
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        //Group_5_AA441 END
         base_mode = MAV_MODE_FLAG_MANUAL_INPUT_ENABLED;
         break;
     case STABILIZE:

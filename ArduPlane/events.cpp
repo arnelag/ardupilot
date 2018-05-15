@@ -10,6 +10,9 @@ void Plane::failsafe_short_on_event(enum failsafe_state fstype, mode_reason_t re
     {
     case MANUAL:
     case STABILIZE:
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        //Group_5_AA441 END
     case ACRO:
     case FLY_BY_WIRE_A:
     case AUTOTUNE:
@@ -69,6 +72,9 @@ void Plane::failsafe_long_on_event(enum failsafe_state fstype, mode_reason_t rea
     {
     case MANUAL:
     case STABILIZE:
+        //Group_5_AA441 START
+    case UWSTABILIZE:
+        //Group_5_AA441 END
     case ACRO:
     case FLY_BY_WIRE_A:
     case AUTOTUNE:

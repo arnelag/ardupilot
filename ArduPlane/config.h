@@ -391,3 +391,8 @@
 # define HAVE_PX4_MIXER 0
 #endif
 
+//Group_5_AA441 START
+#ifndef KP_PHI
+# define KP_PHI 0.43
+#endif
+//Group_5_AA441 END

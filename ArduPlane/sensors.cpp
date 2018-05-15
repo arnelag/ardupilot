@@ -231,6 +231,9 @@ void Plane::update_sensor_status_flags(void)
 
     switch (control_mode) {
     case MANUAL:
+        //Group_5_AA441 START
+    case UWSTABILIZE: 
+        //Group_5_AA441 END
         break;
 
     case ACRO:
