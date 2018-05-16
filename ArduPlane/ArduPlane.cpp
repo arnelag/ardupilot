@@ -1,4 +1,4 @@
-﻿/*
+/*
    Lead developer: Andrew Tridgell
  
    Authors:    Doug Weibel, Jose Julio, Jordi Munoz, Jason Short, Randy Mackay, Pat Hickey, John Arne Birkeland, Olivier Adler, Amilcar Lucas, Gregory Fletcher, Paul Riseborough, Brandon Jones, Jon Challinger
@@ -791,7 +791,7 @@ void Plane::update_flight_mode(void)
 
         //implement control law
         double KPhi = g.kp_phi;      //rad/rad (use the custom parameter so this can be changed on the fly without requiring rebuilding the code)
-        double dA = -KPhi*phi_e;
+        double dA = KPhi*phi_e;
 
         // Set RC output channels to control surface deflections
         double pi = 3.14159;
