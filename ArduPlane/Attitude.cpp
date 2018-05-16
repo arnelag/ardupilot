@@ -1,4 +1,4 @@
-#include "Plane.h"
+﻿#include "Plane.h"
 
 /*
   get a speed scaling number for control surfaces. This is applied to
@@ -363,11 +363,11 @@ void Plane::stabilize()
         return;
     }
 
-    //Group_5_AA441 START
+    //UWAFSL START
     if (control_mode == UWSTABILIZE) {
         return;
     }
-    //Group_5_AA441 END
+    //UWAFSL END
 
     float speed_scaler = get_speed_scaler();
 

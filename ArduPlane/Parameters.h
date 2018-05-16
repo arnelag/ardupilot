@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <AP_Common/AP_Common.h>
 
@@ -55,9 +55,9 @@ public:
         k_param_NavEKF3,
         k_param_BoardConfig_CAN,
 
-        //Group_5_AA441 START
+        //UWAFSL START
         k_param_kp_phi = 9,
-        //Group_5_AA441 END
+        //UWAFSL END
 
         // Misc
         //
@@ -512,9 +512,9 @@ public:
     AP_Int16 gcs_pid_mask;
     AP_Int8 parachute_channel;
 
-    //Group_5_AA441 START
+    //UWAFSL START
     AP_Float kp_phi;
-    //Group_5_AA441 END
+    //UWAFSL END
 };
 
 /*

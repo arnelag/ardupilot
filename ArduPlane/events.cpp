@@ -1,4 +1,4 @@
-#include "Plane.h"
+﻿#include "Plane.h"
 
 void Plane::failsafe_short_on_event(enum failsafe_state fstype, mode_reason_t reason)
 {
@@ -10,9 +10,9 @@ void Plane::failsafe_short_on_event(enum failsafe_state fstype, mode_reason_t re
     {
     case MANUAL:
     case STABILIZE:
-        //Group_5_AA441 START
+    //UWAFSL START
     case UWSTABILIZE:
-        //Group_5_AA441 END
+    //UWAFSL END
     case ACRO:
     case FLY_BY_WIRE_A:
     case AUTOTUNE:
@@ -72,9 +72,9 @@ void Plane::failsafe_long_on_event(enum failsafe_state fstype, mode_reason_t rea
     {
     case MANUAL:
     case STABILIZE:
-        //Group_5_AA441 START
+    //UWAFSL START
     case UWSTABILIZE:
-        //Group_5_AA441 END
+    //UWAFSL END
     case ACRO:
     case FLY_BY_WIRE_A:
     case AUTOTUNE:
